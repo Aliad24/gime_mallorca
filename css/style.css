@@ -15,7 +15,6 @@
     url("../font/montserratalternates-regular.woff") format("woff");
 }
 
-
 @font-face {
   font-family: "montserratBold";
   src: url("../font/montserratalternates-bold.woff2") format("woff2"),
@@ -28,7 +27,6 @@
     url("../font/montserratalternates-italic.woff") format("woff");
 }
 
-
 /*
 html{
   font-family: "montserratRegular";
@@ -36,51 +34,96 @@ html{
 }
 */
 
-
-
 /* ******************************** */
 
 /* Colores */
 
-:root{
+:root {
+  /* Colores */
   --color-bgMenu: #464552;
-  --color-bgBody: #B7D4E9;
-  --color-link: #707070;
+  --color-bgBody: #b7d4e9;
+  --color-link: #9c9c9c;
   --color-linkAction: #fdfdfd;
   --color-tipografia: ;
   --color-tipografia: ;
   --color-tipografia: ;
-
+  
+  /* Colores */
+  --size-screen: 1366px;
 }
 
-a{
+a {
   color: var(--color-link);
 }
+
+a:hover{
+  color: var(--color-linkAction);
+}
+
+.action{
+  color: var(--color-linkAction);
+  text-decoration: underline;
+  
+
+}
+
 /* ******************************** */
 
-body{
-  display: flex;
+html {
+  font-size: 16px;
+  font-family: montserratRegular , sans-serif;
 }
-.container{
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-bgBody);
+}
+
+.container {
   width: 100%;
   height: 100px;
-  padding: 50px 100px;
-  max-width: 1366px;
+  max-width: var(--size-screen);
+
 }
 
 /* Header */
 
-header{
+header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bgMenu);
+  padding: 50px 100px;
 }
 
-.ecommerce{}
-.ecommerce__carrito{}
-.ecommerce__lupa{}
-.logotipo{}
-.logotipo__logo{}
-.menu{}
-.menu__home{}
-.menu__products{}
-.menu_aboutus{}
-.menu_contacts{}
+.ecommerce {
+  display: flex;
+  gap: 20px;
+
+  & .ecommerce__carrito {
+  }
+  & .ecommerce__lupa {
+  }
+}
+
+.logotipo {
+  & .logotipo__logo {
+    font-family: montserratBold , sans-serif;
+
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+
+  .menu__home {
+  }
+  .menu__product {
+  }
+  .menu_aboutus {
+  }
+  .menu_contacts {
+  }
+}
