@@ -26,7 +26,7 @@
       content="URL de la imagen que quieres mostrar en Twitter"
     />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
     <link rel="manifest" href="site.webmanifest" />
@@ -36,12 +36,12 @@
 
     <!-- links de estilos -->
     <link rel="stylesheet" href="css/style.css" />
-    
+
     <!-- Se cambia el tema de algunos navegadores -->
     <meta name="theme-color" content="#fafafa" />
     <!-- Código de las plataformas de Análisis -->
     <script></script>
-    <!-- Scripts a cargar antes de la renderización --> 
+    <!-- Scripts a cargar antes de la renderización -->
     <script src="preloader.js"></script>
   </head>
   <body>
@@ -52,24 +52,18 @@
         <!-- nav (el navegador de toda la web) -->
         <a href="index.html" class="logotipo">
           <h1 class="logotipo__logo">Kauf</h1>
-          </a>  
-       
+        </a>
 
         <nav class="menu">
-          
-              <a class="menu__home action" href="">home</a>
-              <a class="menu__product" href="product.html">product</a>
-              <a class="menu_aboutus" href="aboutus.html">about us</a>
-              <a class="menu_contacts" href="contacts.html">contacts</a>
-          
+          <a class="menu__home action" href="">home</a>
+          <a class="menu__product" href="product.html">product</a>
+          <a class="menu_aboutus" href="aboutus.html">about us</a>
+          <a class="menu_contacts" href="contacts.html">contacts</a>
         </nav>
         <section class="ecommerce">
-          <img class="ecommerce__lupa" src="svg/lupa.svg" alt="">
-          <img class="ecommerce__carrito" src="svg/cart.svg" alt="">
+          <img class="ecommerce__lupa" src="svg/lupa.svg" alt="" />
+          <img class="ecommerce__carrito" src="svg/cart.svg" alt="" />
         </section>
-        
-
-
       </header>
       <!-- Main (centro de la página, zona central) -->
       <main>
@@ -77,8 +71,125 @@
       </main>
       <!-- Footer (final de la página, zona inferior) -->
       <footer>
+        <!-- Section Images -->
+        <picture class="footerimg">
+          <a href="#">
+            <img
+              src="img/"
+              alt="imagen de la empresa bla, bla, bla"
+              class="footerimg__img1"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="img/"
+              alt="imagen de la empresa bla, bla, bla"
+              class="footerimg__img2"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="img/"
+              alt="imagen de la empresa bla, bla, bla"
+              class="footerimg__img3"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="img/"
+              alt="imagen de la empresa bla, bla, bla"
+              class="footerimg__img4"
+            />
+          </a>
+        </picture>
+        <!-- Section List Descriptions -->
+        <section class="footerdescripcion">
+
+          <article class="footerdescripcion__logoDes">
+            <section class="logodescripcion">
+              
+              <h2 class="logo"><img src="" alt=""></h2>
+              <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum architecto voluptate sapiente tenetur? Corporis, necessitatibus.</h3>
+            </section>
+            <picture class="rrss">
+              <a href="#"><img src="facebook"></a>
+              <a href="#"><img src="x"></a>
+              <a href="#"><img src="youtube"></a>
+            </picture>
+          </article>
+          <ul class="footerdescripcion__Support">
+            <li class="tituloLi">Support</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+          <ul class="footerdescripcion__Shop">
+            <li class="tituloLi">Shop</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+          <ul class="footerdescripcion__Company">
+            <li class="tituloLi">Company</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+          <ul class="footerdescripcion__ContactUs">
+            <li class="tituloLi">Contact Us</li>
+            <li>
+              <img src="svg/map.svg">
+              c/noseque nosecuantos, 77
+            </li>
+            <li>
+              <img src="svg/tel.svg">
+              +77 777 77 77 77
+            </li>
+            <li>
+              <img src="svg/mail.svg">
+              bihhit777@hybe.kor
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section Copy & Card -->
+        <section class="copyright">
+          <h6 class="copyright__copy">&copy;2024 Kauf. All rights reserved.</h6>
+          <picture class="copyright__tarjetas">
+            <img
+              src="img/"
+              alt="tarjeta de credito__americanExpress"
+              class="tarjetas__americanExpress"
+            />
+            <img
+              src="img/"
+              alt="tarjeta de credito__stripe"
+              class="tarjetas__stripe"
+            />
+            <img
+              src="img/"
+              alt="tarjeta de credito__masterCard"
+              class="tarjetas__masterCard"
+            />
+            <img
+              src="img/"
+              alt="tarjeta de credito__visa"
+              class="tarjetas__visa"
+            />
+            <img
+              src="img/"
+              alt="tarjeta de credito__paypal"
+              class="tarjetas__paypal"
+            />
+          </picture>
+        </section>
       </footer>
     </div>
-
   </body>
 </html>
