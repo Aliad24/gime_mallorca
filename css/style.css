@@ -27,28 +27,15 @@
     url("../font/montserratalternates-italic.woff") format("woff");
 }
 
-/*
-html{
-  font-family: "montserratRegular";
-  font-style: italic;
-}
-*/
-
-/* ******************************** */
-
 /* Colores */
 
 :root {
   /* Colores */
-  --color-bgMenu: #464552;
-  --color-bgBody: #b7d4e9;
-  --color-link: #9c9c9c;
+  --color-bgMenu: #25262A;
+  --color-bgBody: #F9F9F9;
   --color-linkAction: #fdfdfd;
-  --color-tipografia: ;
-  --color-tipografia: ;
-  --color-tipografia: ;
-  
-  /* Colores */
+  --color-link: #9c9c9c;
+  /* Size */
   --size-screen: 1366px;
 }
 
@@ -56,35 +43,32 @@ a {
   color: var(--color-link);
 }
 
-a:hover{
+a:hover {
   color: var(--color-linkAction);
 }
 
-.action{
+.action {
   color: var(--color-linkAction);
   text-decoration: underline;
-  
-
 }
 
 /* ******************************** */
 
 html {
   font-size: 16px;
-  font-family: montserratRegular , sans-serif;
+  font-family: montserratRegular, sans-serif;
 }
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--color-bgBody);
 }
 
 .container {
   width: 100%;
-  height: 100px;
   max-width: var(--size-screen);
-
 }
 
 /* Header */
@@ -93,31 +77,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-bgMenu);
   padding: 50px 100px;
-}
-
-.ecommerce {
-  display: flex;
-  gap: 20px;
-
-  & .ecommerce__carrito {
-  }
-  & .ecommerce__lupa {
-  }
+  background-color: var(--color-bgMenu);
 }
 
 .logotipo {
   & .logotipo__logo {
-    font-family: montserratBold , sans-serif;
-
+    font-family: montserratBold;
   }
 }
 
 .menu {
   display: flex;
   gap: 20px;
-
+  /* 
   .menu__home {
   }
   .menu__product {
@@ -125,5 +98,148 @@ header {
   .menu_aboutus {
   }
   .menu_contacts {
-  }
+  } */
 }
+
+.ecommerce {
+  display: flex;
+  gap: 20px;
+
+  & .ecommerce__carrito {
+    background: linear-gradient(
+      180deg;
+      #fff 50%
+      #25262a 50%
+      #25262a 100%
+    );
+  }
+  /* 
+  & .ecommerce__lupa {
+  }
+   */
+}
+
+
+
+  /* *********************************** */
+  /* **************MAIN*************** */
+  /* *********************************** */
+
+  main{
+    columns: 2;
+    column-gap: 30px;
+    
+    & img{
+      padding: 20px 0;
+    }
+    
+    padding: 100px 50px;
+
+    & p{
+      text-align: justify;
+    }
+  }
+
+  /* *********************************** */
+  /* **************FOOTER*************** */
+  /* *********************************** */
+  
+  footer{
+    width: 100%;
+    background: linear-gradient(180deg, #F9F9F9 0%, #F9F9F9 10%, #25262A 10%, #25262A 100%, #25262A 100%);
+    display: flex;
+    justify-content: center;
+    color: #F9F9F9;
+    
+  }
+  
+  .footerimg {
+    display: flex;
+    justify-content: space-between;
+    
+    & footerimg__img1 {
+    }
+    & footerimg__img2 {
+    }
+    & footerimg__img3 {
+    }
+    & footerimg__img4 {
+    }
+  }
+  
+  /* SECTION CENTRAL */
+
+  .footerdescripcion {
+    margin: 80px 0;
+    columns: 5;
+
+
+    & .footerdescripcion__logoDes {
+      
+    }
+    & .footerdescripcion__Support {
+    }
+    & .footerdescripcion__Shop {
+      
+    }
+    & .footerdescripcion__Company {
+    }
+    & .footerdescripcion__ContactUs {
+      & li{
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+  .logodescripcion {
+    margin-bottom: 15px;
+  }
+  .logo {
+
+  }
+  .rrss {
+    display: flex;
+    gap: 10px;
+    & .rrss__facebook{
+
+    }
+    & .rrss__x{
+
+    }
+    & .rrss__youtube{
+
+    }
+  }
+  .tituloLi {
+    margin-bottom: 20px;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .copyright__copy {
+    }
+    & .copyright__tarjetas {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  /* ********************
+  .tarjetas {
+    & .tarjetas__americanExpress {
+    }
+    & .tarjetas__stripe {
+    }
+    & .tarjetas__masterCard {
+    }
+    & .tarjetas__visa {
+    }
+    & .tarjetas__paypal {
+    }
+  }
+  *************** */
